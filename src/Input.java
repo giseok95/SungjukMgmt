@@ -24,6 +24,7 @@ public class Input {
 			this.array[count-1]=new Student(hakbun,name,kor,eng,mat,edp);
 			System.out.println("계속(I/O)?: ");			
 			io = this.sc.next();
+			this.sc.nextLine(); //buffer날리기
 		}while(io.equals("I")||io.equals("i"));
 	return count;
 	}
